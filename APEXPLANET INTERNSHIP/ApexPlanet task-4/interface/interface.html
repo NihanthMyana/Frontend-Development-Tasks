@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Filter & Sort</title>
+  <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="filters">
+      <h2>Filters</h2>
+      <h3>Category</h3>
+      <label><input type="checkbox" value="Men"> Men's</label>
+      <label><input type="checkbox" value="Women"> Women's</label>
+      <label><input type="checkbox" value="Electronics"> Electronics</label>
+    
+
+      <h3>Price</h3>
+      <label><input type="radio" name="price" value="under1000"> Under ₹1000</label>
+      <label><input type="radio" name="price" value="above1000"> Above ₹1000</label>
+      <label><input type="radio" name="price" value="all" checked> All</label>
+    </aside>
+    <main class="main-content">
+      <div class="sort">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="rating">Rating</option>
+          <option value="priceLowHigh">Price: Low to High</option>
+          <option value="priceHighLow">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div id="product-container" class="product-grid">
+      </div>
+    </main>
+  </div>
+
+  <script src="interface.js"></script>
+</body>
+<footer class="footer">
+    <p>&copy; 2025 MyStore. All rights reserved.</p>
+    
+    </div>
+  </div>
+</footer>
+
+</html>
